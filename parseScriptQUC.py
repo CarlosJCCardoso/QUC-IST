@@ -95,7 +95,9 @@ def getScriptAnswer(soup):
             i += 1
     return scriptAns
 
-response = requests.get("https://fenix.tecnico.ulisboa.pt/publico/viewCourseResults.do?executionCourseID=1690460473010886&degreeCurricularPlanOID=2581275345334")
-soup = BeautifulSoup(response.text, 'html.parser')
-scriptAnswers = getScriptAnswer(soup)
-print(scriptAnswers)
+
+if __name__ == "__main__":
+    response = requests.get("https://fenix.tecnico.ulisboa.pt/publico/viewCourseResults.do?executionCourseID=1690460473010886&degreeCurricularPlanOID=2581275345334")
+    soup = BeautifulSoup(response.text, 'html.parser')
+    scriptAnswers = getScriptAnswer(soup)
+    print(scriptAnswers)
