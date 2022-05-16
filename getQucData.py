@@ -1,5 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
+from parseScriptQUC import getScriptAnswer
+
+
 
 url = 'https://fenix.tecnico.ulisboa.pt/publico/viewCourseResults.do?executionCourseID=1690460473010771&degreeCurricularPlanOID=2581275345334'
 r = requests.get(url)
@@ -32,7 +35,6 @@ def getGeneralResults(soup):
                   'Avaliação da UC'  : barcolorToText(tds[2].div['class'][0]), 
                   'Docência da UC'   : barcolorToText(tds[3].div['class'][0])}
 
-    print(graph_dict)
     return graph_dict
 
 # 1. Acompanhamento da UC ao longo do semestre/carga de trabalho da UC
@@ -68,7 +70,6 @@ def getAttendance(soup):
     both = {"Para os alunos que indicaram acréscimo de carga de trabalho, a razão deveu-se a" : thigh_dict,
             "Para os alunos que indicaram baixa carga de trabalho, a razão deveu-se a:"       : tdown_dict }
     
-    print(both)
     return both
 
 # Os conhecimentos anteriores foram suficientes para o acompanhamento desta UC
@@ -83,7 +84,6 @@ def getKnowledge(soup):
         scores.append(table.find("div", {"class": f'graph-bar-19-{i}'}).text)
     
     knowledge = {"Os conhecimentos anteriores foram suficientes para o acompanhamento desta UC": {"N" : N, "Mediana": mediana , "scores" : scores}}
-    print(knowledge)
     return knowledge
 
 
@@ -96,12 +96,12 @@ def getEvaluationMethod(soup):
                       'Taxa de aprovação' : trs[2].td.text.strip(), 
                       'Tx. de aprovação média no ano curricular do curso':  trs[3].td.text.strip(),
                       'Média classificações': trs[4].td.text.strip()}
-    print(graph2col_dict)
     return graph2col_dict
 
-getGeneralResults(soup)
-getEvaluationMethod(soup)
-getAttendance(soup)
-getKnowledge(soup)
 
-
+answersQUC = getScriptAnswer(soup)
+answersQUC['General Results'] = getGeneralResults(soup)
+answersQUC['Evaluation Method'] = getEvaluationMethod(soup)
+answersQUC['Attendance'] = getAttendance(soup)
+answersQUC['Previous Knowledge'] = getKnowledge(soup)
+print(answersQUC)
