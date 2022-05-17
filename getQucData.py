@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from parseScriptQUC import getScriptAnswer
+import json
 
 
 def barcolorToText(barcolor):
@@ -109,12 +110,20 @@ def parseNeutralTableRow(row, headers):
     # Get first columns values
     values = []
     for i in range (1, len(headers) + 1):
-        values.append(row.findAll("td", {"class" : f'x{i}'})[0].text.strip())
+        value = row.findAll("td", {"class" : f'x{i}'})
+        if value:
+            values.append(value[0].text.strip())
+        else:
+            values.append("")
    
     # Get scores
     scores = []
     for i in range(1,10):
-        scores.append(row.find("div", {"class": f'graph-bar-19-{i}'}).text)
+        score = row.find("div", {"class": f'graph-bar-19-{i}'})
+        if score:
+            scores.append(score.text)
+        else:
+            scores.append("")
 
     #{"N" : N, "Mediana": mediana , "scores" : scores}
     out = {}
@@ -217,7 +226,7 @@ def getQUCdata(url):
     else:
         soup = BeautifulSoup(r.text, 'html.parser')
         answersQUC = getScriptAnswer(soup)
-        answersQUC['General Results'] = getGeneralResults(soup)     #0
+        answersQUC['General Results'] = getGeneralResults(soup)     #1
         answersQUC['Attendance'] = getAttendance(soup)              #1.1
         answersQUC['Previous Knowledge'] = getKnowledge(soup)       #1.2
         answersQUC['Importance'] = getImportance(soup)              #1.3
@@ -231,10 +240,12 @@ def getQUCdata(url):
 
 
 def main():
-    url = 'https://fenix.tecnico.ulisboa.pt/publico/viewCourseResults.do?executionCourseID=1690460473010771&degreeCurricularPlanOID=2581275345334'
+    url = 'https://fenix.tecnico.ulisboa.pt/publico/viewCourseResults.do?executionCourseID=564560566175931&degreeCurricularPlanOID=2581275345327'
     answersQUC = getQUCdata(url)
     #print(answersQUC)
-    print(answersQUC["Evaluation Method"])
+    #print(answersQUC["Evaluation Method"])
+    with open('answersQUC.json', 'w',  encoding='utf-8') as json_file:
+        json.dump(answersQUC, json_file, indent=4)
 
 if __name__ == "__main__":
     main()
