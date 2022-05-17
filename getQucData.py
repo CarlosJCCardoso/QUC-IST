@@ -1,5 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
+from parseScriptQUC import getScriptAnswer
+
+
 
 url = 'https://fenix.tecnico.ulisboa.pt/publico/viewCourseResults.do?executionCourseID=1690460473010771&degreeCurricularPlanOID=2581275345334'
 r = requests.get(url)
@@ -195,9 +198,28 @@ def getDevelopment(soup):
 
 
 generalResults = getGeneralResults(soup)
-attendance     = getAttendance(soup)
-knowledge      = getKnowledge(soup)
 importance     = getImportance(soup)
-organization   = getOrganization(soup)
+attendance     = getAttendance(soup)
 evaluation     = getEvaluationMethod(soup)
+organization   = getOrganization(soup)
+
+knowledge      = getKnowledge(soup)
 development    = getDevelopment(soup)
+
+
+
+
+
+answersQUC = getScriptAnswer(soup)
+answersQUC['General Results'] = getGeneralResults(soup)     #0
+answersQUC['Attendance'] = getAttendance(soup)              #1.1
+answersQUC['Previous Knowledge'] = getKnowledge(soup)       #1.2
+answersQUC['Importance'] = getImportance(soup)              #1.3
+answersQUC['Organization'] = getOrganization(soup)          #2
+answersQUC['Evaluation Method'] = getEvaluationMethod(soup) #3
+answersQUC['Development'] = getDevelopment(soup)            #4
+
+# 5. Corpo Docente
+
+
+print(answersQUC)
