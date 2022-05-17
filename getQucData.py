@@ -205,6 +205,5 @@ answersQUC['Development'] = getDevelopment(soup)            #4
 
 # 5. Corpo Docente
 
-
 print(answersQUC)
 
