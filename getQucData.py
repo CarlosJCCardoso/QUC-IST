@@ -197,19 +197,6 @@ def getDevelopment(soup):
     return {'4. A UC contribuiu para a aquisição e/ou desenvolvimento das competências' : development}
 
 
-generalResults = getGeneralResults(soup)
-importance     = getImportance(soup)
-attendance     = getAttendance(soup)
-evaluation     = getEvaluationMethod(soup)
-organization   = getOrganization(soup)
-
-knowledge      = getKnowledge(soup)
-development    = getDevelopment(soup)
-
-
-
-
-
 answersQUC = getScriptAnswer(soup)
 answersQUC['General Results'] = getGeneralResults(soup)     #0
 answersQUC['Attendance'] = getAttendance(soup)              #1.1
@@ -223,3 +210,6 @@ answersQUC['Development'] = getDevelopment(soup)            #4
 
 
 print(answersQUC)
+
+# Usar esta linha para dar print "bonito" dos dados
+# print(json.dumps(answersQUC["Grades"],indent = 4))
