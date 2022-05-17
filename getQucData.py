@@ -5,6 +5,7 @@ url = 'https://fenix.tecnico.ulisboa.pt/publico/viewCourseResults.do?executionCo
 r = requests.get(url)
 
 soup = BeautifulSoup(r.text, 'html.parser')
+tables = soup.findAll("table", { "class" : "graph neutral table" })
 
 def barcolorToText(barcolor):
     # Verde   - De acordo com o previsto
@@ -32,11 +33,11 @@ def getGeneralResults(soup):
                   'Avaliação da UC'  : barcolorToText(tds[2].div['class'][0]), 
                   'Docência da UC'   : barcolorToText(tds[3].div['class'][0])}
 
-    print(graph_dict)
-    return graph_dict
+    return {'Resultados gerais da UC e estatísticas de preenchimento' : graph_dict}
 
 # 1. Acompanhamento da UC ao longo do semestre/carga de trabalho da UC
 # Para os alunos que indicaram acréscimo de carga de trabalho, a razão deveu-se a:
+# Para os alunos que indicaram baixa carga de trabalho, a razão deveu-se a:
 def getAttendance(soup):
     tables = soup.findAll("table", { "class" : "graph table" })
 
@@ -68,27 +69,96 @@ def getAttendance(soup):
     both = {"Para os alunos que indicaram acréscimo de carga de trabalho, a razão deveu-se a" : thigh_dict,
             "Para os alunos que indicaram baixa carga de trabalho, a razão deveu-se a:"       : tdown_dict }
     
-    print(both)
-    return both
+    return {'1. Acompanhamento da UC ao longo do semestre/carga de trabalho da UC' : both}
 
-# Os conhecimentos anteriores foram suficientes para o acompanhamento desta UC
+def parseNeutralTableHeaders(neutralTable):
+    headers = []
+    head = neutralTable.findAll("tr", {"class" : "thead"})
+    ths = head[0].findAll("th")
+
+    # Ignore first and last th
+    for i in range(1, len(ths) -1):
+        headers.append(ths[i].text.strip())
+
+    return headers
+
+def parseNeutralTableRow(row, headers):
+    # Get first columns values
+    values = []
+    for i in range (1, len(headers) + 1):
+        values.append(row.findAll("td", {"class" : f'x{i}'})[0].text.strip())
+   
+    # Get scores
+    scores = []
+    for i in range(1,10):
+        scores.append(row.find("div", {"class": f'graph-bar-19-{i}'}).text)
+
+    #{"N" : N, "Mediana": mediana , "scores" : scores}
+    out = {}
+    
+    for i in range(0, len(headers)):
+        out = out | {headers[i] : values[i]}
+
+    out = out |  {"scores" : scores}
+
+    return  out
+
+def parseNeutralTable(neutralTable):
+    info = {}
+    headers = parseNeutralTableHeaders(neutralTable)
+
+    trows = neutralTable.tbody.findChildren("tr" , recursive=False)
+
+    # Ignore Table headers
+    for i in range(1, len(trows)):
+        title = trows[i].find("th").text.strip()
+        row = { title : parseNeutralTableRow(trows[i], headers)}
+        info = info | row
+
+    # { '1.3.1 Assistir às aulas teóricas/seminário' : {'N': '5', 'Mediana': '7', 'Não se aplica': '65', 'scores': ['', '', '', '', '7%', '15%', '23%', '23%', '22%']}}
+    
+    #print(info)
+    return info
+
+# 1.2 Os conhecimentos anteriores foram suficientes para o acompanhamento desta UC
 def getKnowledge(soup):
     tables = soup.findAll("table", { "class" : "graph neutral table" })
     table  = tables[0]
-    N       = table.findAll("td", {"class" : "x2"})[0].text.strip()
-    mediana = table.findAll("td", {"class" : "x1"})[0].text.strip()
 
-    scores = []
-    for i in range(1,10):
-        scores.append(table.find("div", {"class": f'graph-bar-19-{i}'}).text)
+    rows = table.findAll("tr")
+    headers = parseNeutralTableHeaders(table)
+
+    info = parseNeutralTableRow(rows[2], headers)
     
-    knowledge = {"Os conhecimentos anteriores foram suficientes para o acompanhamento desta UC": {"N" : N, "Mediana": mediana , "scores" : scores}}
-    print(knowledge)
+    knowledge = {"1.2 Os conhecimentos anteriores foram suficientes para o acompanhamento desta UC": info}
+    #print(knowledge)
     return knowledge
+
+# 1.3 Caracterização do nível de importância que atribui aos meios de estudos, quando utilizados, nesta UC:
+def getImportance(soup):
+    tables = soup.findAll("table", { "class" : "graph neutral table" })
+    neutralTable  = tables[1]
+    
+    info = parseNeutralTable(neutralTable)
+    
+    return {'1.3 Caracterização do nível de importância que atribui aos meios de estudos, quando utilizados, nesta UC' : info}
+
+# 2. Organização da UC
+def getOrganization(soup):
+    organization = {}
+    tables = soup.findAll("table", { "class" : "graph classification table" })
+    classTable = tables[0]
+
+    # Parsed in the same way as the NeutralTables
+    organization = parseNeutralTable(classTable)
+
+    return {'2. Organização da UC' : organization}
 
 
 # 3. Método de avaliação da UC
 def getEvaluationMethod(soup):
+    evaluation = {}
+
     table = soup.findAll("table", { "class" : "graph-2col" })
     trs = table[0].findAll("tr")
     graph2col_dict = {'Nº de inscritos'   : trs[0].td.text.strip(), 
@@ -96,12 +166,38 @@ def getEvaluationMethod(soup):
                       'Taxa de aprovação' : trs[2].td.text.strip(), 
                       'Tx. de aprovação média no ano curricular do curso':  trs[3].td.text.strip(),
                       'Média classificações': trs[4].td.text.strip()}
-    print(graph2col_dict)
-    return graph2col_dict
+    #print(graph2col_dict)
 
-getGeneralResults(soup)
-getEvaluationMethod(soup)
-getAttendance(soup)
-getKnowledge(soup)
+    # Get Classification Table
+    tables = soup.findAll("table", { "class" : "graph classification table" })
+    classTable = tables[1]
+
+    # Parsed in the same way as the NeutralTables
+    info = parseNeutralTable(classTable)
+
+    evaluation = graph2col_dict | info
+
+    return {'3. Método de avaliação da UC' : evaluation}
 
 
+# 4. A UC contribuiu para a aquisição e/ou desenvolvimento das competências
+def getDevelopment(soup):
+    development = {}
+    tables = soup.findAll("table", { "class" : "graph neutral table" })
+    table  = tables[2]
+
+    rows = table.findAll("tr")
+    headers = parseNeutralTableHeaders(table)
+
+    development = parseNeutralTableRow(rows[2], headers)
+    
+    return {'4. A UC contribuiu para a aquisição e/ou desenvolvimento das competências' : development}
+
+
+generalResults = getGeneralResults(soup)
+attendance     = getAttendance(soup)
+knowledge      = getKnowledge(soup)
+importance     = getImportance(soup)
+organization   = getOrganization(soup)
+evaluation     = getEvaluationMethod(soup)
+development    = getDevelopment(soup)
