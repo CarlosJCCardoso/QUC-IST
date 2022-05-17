@@ -187,12 +187,9 @@ def getEvaluationMethod(soup):
 def getDevelopment(soup):
     development = {}
     tables = soup.findAll("table", { "class" : "graph neutral table" })
-    table  = tables[2]
+    neutralTable  = tables[2]
 
-    rows = table.findAll("tr")
-    headers = parseNeutralTableHeaders(table)
-
-    development = parseNeutralTableRow(rows[2], headers)
+    development = parseNeutralTable(neutralTable)
     
     return {'4. A UC contribuiu para a aquisição e/ou desenvolvimento das competências' : development}
 
@@ -211,5 +208,3 @@ answersQUC['Development'] = getDevelopment(soup)            #4
 
 print(answersQUC)
 
-# Usar esta linha para dar print "bonito" dos dados
-# print(json.dumps(answersQUC["Grades"],indent = 4))
