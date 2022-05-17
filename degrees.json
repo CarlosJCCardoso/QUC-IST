@@ -1,0 +1,494 @@
+[
+    {
+        "id": "1128661570813976",
+        "name": "Indústria 4.0 Sustentável"
+    },
+    {
+        "id": "1128661570813973",
+        "name": "Física Médica"
+    },
+    {
+        "id": "1128661570813965",
+        "name": "Ciências Nucleares Aplicadas"
+    },
+    {
+        "id": "1128661570813961",
+        "name": "Big Picture Thinking para a Sustentabilidade"
+    },
+    {
+        "id": "1128661570813990",
+        "name": "Tecnologias Multimédia"
+    },
+    {
+        "id": "1128661570813989",
+        "name": "Tecnologias Fotónicas"
+    },
+    {
+        "id": "1128661570813988",
+        "name": "Tecnologias da Internet"
+    },
+    {
+        "id": "1128661570813987",
+        "name": "Tecnologias Biológicas"
+    },
+    {
+        "id": "1128661570813986",
+        "name": "Spatial Data Science"
+    },
+    {
+        "id": "1128661570813984",
+        "name": "Sistemas e Métodos de Apoio à Decisão"
+    },
+    {
+        "id": "1128661570813983",
+        "name": "Robótica e Sistemas Inteligentes"
+    },
+    {
+        "id": "1128661570813982",
+        "name": "Produção de Electricidade Renovável"
+    },
+    {
+        "id": "1128661570813980",
+        "name": "Nanoengenharia e Microsistemas"
+    },
+    {
+        "id": "1128661570813978",
+        "name": "Inteligência Artificial"
+    },
+    {
+        "id": "1128661570813977",
+        "name": "Instrumentação Eletrónica e Sistemas de Aquisição de Dados"
+    },
+    {
+        "id": "1128661570813956",
+        "name": "Informática"
+    },
+    {
+        "id": "1128661570813975",
+        "name": "Gestão Industrial e de Sistemas"
+    },
+    {
+        "id": "1128661570813974",
+        "name": "Gestão Ambiental"
+    },
+    {
+        "id": "1128661570813972",
+        "name": "Física Contemporânea"
+    },
+    {
+        "id": "1128661570813970",
+        "name": "Energy for the Future"
+    },
+    {
+        "id": "1128661570813969",
+        "name": "Empreendedorismo e Inovação"
+    },
+    {
+        "id": "1128661570813967",
+        "name": "Design Thinking"
+    },
+    {
+        "id": "1128661570813960",
+        "name": "Aplicações de Engenharia em Saúde"
+    },
+    {
+        "id": "2761663971465",
+        "name": "Arquitectura"
+    },
+    {
+        "id": "284236640681990",
+        "name": "Proteção e Segurança Radiológica"
+    },
+    {
+        "id": "2761663971585",
+        "name": "Engenharia Informática e de Computadores - Taguspark"
+    },
+    {
+        "id": "847186594103312",
+        "name": "Bioengenharia em Medicina Regenerativa e de Precisão"
+    },
+    {
+        "id": "2761663971606",
+        "name": "Engenharia Electrónica"
+    },
+    {
+        "id": "2761663971477",
+        "name": "Engenharia e Gestão Industrial"
+    },
+    {
+        "id": "2761663971587",
+        "name": "Engenharia de Telecomunicações e Informática"
+    },
+    {
+        "id": "847186594103323",
+        "name": "Sistemas de Transportes "
+    },
+    {
+        "id": "2761663971607",
+        "name": "Química"
+    },
+    {
+        "id": "2761663971473",
+        "name": "Matemática e Aplicações"
+    },
+    {
+        "id": "2761663971485",
+        "name": "Engenharia Naval e Oceânica"
+    },
+    {
+        "id": "2761663971475",
+        "name": "Engenharia Informática e de Computadores - Alameda"
+    },
+    {
+        "id": "2761663971546",
+        "name": "Engenharia Geológica e de Minas"
+    },
+    {
+        "id": "2761663973507",
+        "name": "Engenharia Farmacêutica"
+    },
+    {
+        "id": "2761663977513",
+        "name": "Engenharia e Gestão da Energia"
+    },
+    {
+        "id": "2761663977115",
+        "name": "Engenharia de Petróleos"
+    },
+    {
+        "id": "2761663973508",
+        "name": "Biotecnologia"
+    },
+    {
+        "id": "2761663971844",
+        "name": "Bioengenharia e Nanossistemas"
+    },
+    {
+        "id": "2761663971567",
+        "name": "Engenharia Informática e de Computadores - Taguspark"
+    },
+    {
+        "id": "2761663971605",
+        "name": "Engenharia Electrónica"
+    },
+    {
+        "id": "2761663971476",
+        "name": "Engenharia e Gestão Industrial"
+    },
+    {
+        "id": "2761663971586",
+        "name": "Engenharia de Telecomunicações e Informática"
+    },
+    {
+        "id": "2761663971472",
+        "name": "Matemática Aplicada e Computação"
+    },
+    {
+        "id": "2761663971484",
+        "name": "Engenharia Naval e Oceânica"
+    },
+    {
+        "id": "2761663971474",
+        "name": "Engenharia Informática e de Computadores - Alameda"
+    },
+    {
+        "id": "2761663971545",
+        "name": "Engenharia de Minas e Recursos Energéticos"
+    },
+    {
+        "id": "847186594103313",
+        "name": "Engenharia Aeroespacial"
+    },
+    {
+        "id": "2761663978917",
+        "name": "Microbiologia"
+    },
+    {
+        "id": "1128661570813979",
+        "name": "Matemática Computacional Aplicada às Finanças"
+    },
+    {
+        "id": "1128661570813964",
+        "name": "Ciências e Tecnologias Quânticas"
+    },
+    {
+        "id": "1128661570813963",
+        "name": "Ciências e Tecnologias do Espaço"
+    },
+    {
+        "id": "1128661570813981",
+        "name": "Nanomateriais e Fabricação Avançada"
+    },
+    {
+        "id": "1128661570813985",
+        "name": "Smart Cities"
+    },
+    {
+        "id": "1128661570813966",
+        "name": "Computação de Elevado Desempenho"
+    },
+    {
+        "id": "1128661570813962",
+        "name": "Ciência de Dados"
+    },
+    {
+        "id": "1128661570813959",
+        "name": "Aplicações da Matemática à Engenharia"
+    },
+    {
+        "id": "847186594103320",
+        "name": "Engenharia Química"
+    },
+    {
+        "id": "847186594103319",
+        "name": "Engenharia Mecânica"
+    },
+    {
+        "id": "847186594103318",
+        "name": "Engenharia Física Tecnológica"
+    },
+    {
+        "id": "847186594103317",
+        "name": "Engenharia Eletrotécnica e de Computadores"
+    },
+    {
+        "id": "2761663971566",
+        "name": "Engenharia do Ambiente"
+    },
+    {
+        "id": "2761663971470",
+        "name": "Engenharia de Materiais"
+    },
+    {
+        "id": "847186594103316",
+        "name": "Engenharia Civil"
+    },
+    {
+        "id": "847186594103315",
+        "name": "Engenharia Biomédica"
+    },
+    {
+        "id": "847186594103314",
+        "name": "Engenharia Biológica"
+    },
+    {
+        "id": "2761663971469",
+        "name": "Engenharia de Materiais"
+    },
+    {
+        "id": "847186594103311",
+        "name": "Engenharia Química"
+    },
+    {
+        "id": "847186594103310",
+        "name": "Engenharia Mecânica"
+    },
+    {
+        "id": "847186594103309",
+        "name": "Engenharia Física Tecnológica"
+    },
+    {
+        "id": "847186594103308",
+        "name": "Engenharia Eletrotécnica e de Computadores"
+    },
+    {
+        "id": "2761663971565",
+        "name": "Engenharia do Ambiente"
+    },
+    {
+        "id": "847186594103307",
+        "name": "Engenharia Civil"
+    },
+    {
+        "id": "847186594103306",
+        "name": "Engenharia Biomédica"
+    },
+    {
+        "id": "847186594103305",
+        "name": "Engenharia Biológica"
+    },
+    {
+        "id": "1691611524235272",
+        "name": "Metodologias e Técnicas de Investigação Científica"
+    },
+    {
+        "id": "847186594103304",
+        "name": "Engenharia Aeroespacial"
+    },
+    {
+        "id": "2761663971607",
+        "name": "Química"
+    },
+    {
+        "id": "2761663979117",
+        "name": "Informação e Sistemas Empresariais"
+    },
+    {
+        "id": "565711617392644",
+        "name": "Engenharia e Gestão da Inovação e Empreendedorismo"
+    },
+    {
+        "id": "2761663979917",
+        "name": "Segurança de Informação e Direito no Ciberespaço"
+    },
+    {
+        "id": "1973086500945924",
+        "name": "Engenharia e Ciência de Dados"
+    },
+    {
+        "id": "1691611524235268",
+        "name": "Ordenamento do Território e Urbanismo"
+    },
+    {
+        "id": "2761663980117",
+        "name": "Engenharia de Petróleos"
+    },
+    {
+        "id": "2761663975311",
+        "name": "Alterações Climáticas e Políticas de Desenvolvimento Sustentável"
+    },
+    {
+        "id": "2761663971741",
+        "name": "Engenharia Civil"
+    },
+    {
+        "id": "2761663979717",
+        "name": "Materiais e Processamento Avançados"
+    },
+    {
+        "id": "2761663976713",
+        "name": "Engenharia da Refinação, Petroquímica e Química"
+    },
+    {
+        "id": "2761663975111",
+        "name": "Restauro e Gestão Fluviais"
+    },
+    {
+        "id": "2761663971699",
+        "name": "Engenharia de Materiais"
+    },
+    {
+        "id": "2761663971863",
+        "name": "Estatística e Processos Estocásticos"
+    },
+    {
+        "id": "2761663971696",
+        "name": "Engenharia Física Tecnológica"
+    },
+    {
+        "id": "2761663971695",
+        "name": "Física"
+    },
+    {
+        "id": "2761663971903",
+        "name": "Sistemas  Sustentáveis de Energia"
+    },
+    {
+        "id": "2761663971904",
+        "name": "Bioengenharia"
+    },
+    {
+        "id": "2761663971784",
+        "name": "Georrecursos"
+    },
+    {
+        "id": "2761663971782",
+        "name": "Engenharia Aeroespacial"
+    },
+    {
+        "id": "2761663971783",
+        "name": "Engenharia Informática e de Computadores"
+    },
+    {
+        "id": "2761663971690",
+        "name": "Engenharia Naval e Oceânica"
+    },
+    {
+        "id": "2761663973710",
+        "name": "Engenharia e Políticas Públicas"
+    },
+    {
+        "id": "2761663971761",
+        "name": "Engenharia do Território e Planeamento Territorial"
+    },
+    {
+        "id": "2761663971628",
+        "name": "Engenharia Mecânica"
+    },
+    {
+        "id": "2761663973105",
+        "name": "Segurança de Informação"
+    },
+    {
+        "id": "2761663976111",
+        "name": "Sistemas de Transportes"
+    },
+    {
+        "id": "2761663971790",
+        "name": "Matemática"
+    },
+    {
+        "id": "2761663971788",
+        "name": "Química"
+    },
+    {
+        "id": "2761663971789",
+        "name": "Biotecnologia e Biociências"
+    },
+    {
+        "id": "2761663971787",
+        "name": "Engenharia Química"
+    },
+    {
+        "id": "2761663971785",
+        "name": "Engenharia do Ambiente"
+    },
+    {
+        "id": "2761663973505",
+        "name": "Líderes para Indústrias Tecnológicas"
+    },
+    {
+        "id": "2761663971786",
+        "name": "Engenharia e Gestão"
+    },
+    {
+        "id": "2761663973305",
+        "name": "Engenharia Computacional"
+    },
+    {
+        "id": "2761663971671",
+        "name": "Engenharia Electrotécnica e de Computadores"
+    },
+    {
+        "id": "2761663971693",
+        "name": "Engenharia Biomédica"
+    },
+    {
+        "id": "2761663971791",
+        "name": "Arquitectura"
+    },
+    {
+        "id": "1410136547524611",
+        "name": "HACS"
+    },
+    {
+        "id": "1128661570813954",
+        "name": "Ciências e Tecnologias Para o Património Cultural"
+    },
+    {
+        "id": "1128661570813994",
+        "name": "Tecnologias para o Património Cultural"
+    },
+    {
+        "id": "1128661570813971",
+        "name": "Engenharia Humanitária"
+    },
+    {
+        "id": "1128661570813968",
+        "name": "Economia Circular"
+    },
+    {
+        "id": "1128661570813958",
+        "name": "Ambientes Extremos"
+    }
+]

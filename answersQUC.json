@@ -16,8 +16,8 @@
     },
     "Grades": {
         "Grades Predicted": {
-            "N\u00e3o sabe": 0.0,
-            "N\u00e3o avaliado": 0.17,
+            "Não sabe": 0.0,
+            "Não avaliado": 0.17,
             "Reprovado": 0.13,
             "10-11": 0.17,
             "12-13": 0.22,
@@ -26,8 +26,8 @@
             "18-20": 0.01
         },
         "Real Grades": {
-            "N\u00e3o sabe": 0.0,
-            "N\u00e3o avaliado": 0.17,
+            "Não sabe": 0.0,
+            "Não avaliado": 0.17,
             "Reprovado": 0.13,
             "10-11": 0.17,
             "12-13": 0.22,
@@ -37,37 +37,37 @@
         }
     },
     "General Results": {
-        "Resultados gerais da UC e estat\u00edsticas de preenchimento": {
+        "Resultados gerais da UC e estatísticas de preenchimento": {
             "Carga de trabalho": "De acordo com o previsto",
-            "Organiza\u00e7\u00e3o da UC": "De acordo com o previsto",
-            "Avalia\u00e7\u00e3o da UC": "De acordo com o previsto",
-            "Doc\u00eancia da UC": "De acordo com o previsto"
+            "Organização da UC": "De acordo com o previsto",
+            "Avaliação da UC": "De acordo com o previsto",
+            "Docência da UC": "De acordo com o previsto"
         }
     },
     "Attendance": {
         "1. Acompanhamento da UC ao longo do semestre/carga de trabalho da UC": {
-            "Para os alunos que indicaram acr\u00e9scimo de carga de trabalho, a raz\u00e3o deveu-se a": {
-                "N\u00ba de respostas": "55",
+            "Para os alunos que indicaram acréscimo de carga de trabalho, a razão deveu-se a": {
+                "Nº de respostas": "55",
                 "Trabalhos/projectos complexos": "18%",
                 "Trabalhos/projectos extensos": "4%",
-                "Trabalhos/projectos em n\u00famero elevado": "2%",
-                "Falta de prepara\u00e7\u00e3o anterior exigindo mais trabalho/estudo": "58%",
-                "Extens\u00e3o do programa face ao n\u00ba de aulas previstas": "7%",
+                "Trabalhos/projectos em número elevado": "2%",
+                "Falta de preparação anterior exigindo mais trabalho/estudo": "58%",
+                "Extensão do programa face ao nº de aulas previstas": "7%",
                 "Pouco acompanhamento das aulas ao longo do semestre": "11%",
-                "Problemas na organiza\u00e7\u00e3o da UC": "5%",
+                "Problemas na organização da UC": "5%",
                 "Problemas pessoais / com os colegas de grupo": "7%",
-                "Outras raz\u00f5es:": "7%"
+                "Outras razões:": "7%"
             },
-            "Para os alunos que indicaram baixa carga de trabalho, a raz\u00e3o deveu-se a:": {
-                "N\u00ba de respostas": "70",
-                "O programa n\u00e3o foi cumprido": "0%",
+            "Para os alunos que indicaram baixa carga de trabalho, a razão deveu-se a:": {
+                "Nº de respostas": "70",
+                "O programa não foi cumprido": "0%",
                 "O programa foi pouco extenso": "0%",
-                "A mat\u00e9ria j\u00e1 tinha sido leccionada noutra UC": "0%",
-                "Frequ\u00eancia de UC em repet\u00eancia": "10%",
+                "A matéria já tinha sido leccionada noutra UC": "0%",
+                "Frequência de UC em repetência": "10%",
                 "Trabalho excessivo noutras UC": "11%",
-                "Avalia\u00e7\u00e3o pouco exigente": "3%",
-                "Boa organiza\u00e7\u00e3o da UC": "20%",
-                "Outras raz\u00f5es:": "14%"
+                "Avaliação pouco exigente": "3%",
+                "Boa organização da UC": "20%",
+                "Outras razões:": "14%"
             }
         }
     },
@@ -89,11 +89,11 @@
         }
     },
     "Importance": {
-        "1.3 Caracteriza\u00e7\u00e3o do n\u00edvel de import\u00e2ncia que atribui aos meios de estudos, quando utilizados, nesta UC": {
-            "1.3.1 Assistir \u00e0s aulas te\u00f3ricas/semin\u00e1rio": {
+        "1.3 Caracterização do nível de importância que atribui aos meios de estudos, quando utilizados, nesta UC": {
+            "1.3.1 Assistir às aulas teóricas/seminário": {
                 "N": "2",
                 "Mediana": "7",
-                "N\u00e3o se aplica": "170",
+                "Não se aplica": "170",
                 "scores": [
                     "",
                     "",
@@ -106,10 +106,10 @@
                     "23%"
                 ]
             },
-            "1.3.2 Assistir \u00e0s aulas de problemas": {
+            "1.3.2 Assistir às aulas de problemas": {
                 "N": "0",
                 "Mediana": "8",
-                "N\u00e3o se aplica": "170",
+                "Não se aplica": "170",
                 "scores": [
                     "",
                     "",
@@ -122,10 +122,10 @@
                     "49%"
                 ]
             },
-            "1.3.3 Assistir \u00e0s aulas de laborat\u00f3rio": {
+            "1.3.3 Assistir às aulas de laboratório": {
                 "N": "115",
                 "Mediana": "-",
-                "N\u00e3o se aplica": "170",
+                "Não se aplica": "170",
                 "scores": [
                     "",
                     "",
@@ -141,7 +141,7 @@
             "1.3.4 Bibliografia sugerida": {
                 "N": "7",
                 "Mediana": "5",
-                "N\u00e3o se aplica": "170",
+                "Não se aplica": "170",
                 "scores": [
                     "10%",
                     "8%",
@@ -157,7 +157,7 @@
             "1.3.5 Apontamentos e outros documentos do professor": {
                 "N": "3",
                 "Mediana": "8",
-                "N\u00e3o se aplica": "170",
+                "Não se aplica": "170",
                 "scores": [
                     "",
                     "",
@@ -173,7 +173,7 @@
             "1.3.6 Apontamentos e outros documentos do aluno": {
                 "N": "11",
                 "Mediana": "7",
-                "N\u00e3o se aplica": "170",
+                "Não se aplica": "170",
                 "scores": [
                     "",
                     "",
@@ -186,10 +186,10 @@
                     "23%"
                 ]
             },
-            "1.3.7 Outra informa\u00e7\u00e3o acess\u00edvel publicamente": {
+            "1.3.7 Outra informação acessível publicamente": {
                 "N": "18",
                 "Mediana": "7",
-                "N\u00e3o se aplica": "170",
+                "Não se aplica": "170",
                 "scores": [
                     "",
                     "",
@@ -205,11 +205,11 @@
         }
     },
     "Organization": {
-        "2. Organiza\u00e7\u00e3o da UC": {
+        "2. Organização da UC": {
             "2.1 O programa previsto foi leccionado": {
                 "N": "14",
                 "Mediana": "9",
-                "N\u00e3o sabe": "170",
+                "Não sabe": "170",
                 "scores": [
                     "",
                     "",
@@ -225,7 +225,7 @@
             "2.2 A UC encontrava-se bem estruturada": {
                 "N": "3",
                 "Mediana": "8",
-                "N\u00e3o sabe": "170",
+                "Não sabe": "170",
                 "scores": [
                     "",
                     "",
@@ -241,7 +241,7 @@
             "2.3 A bibliografia sugerida foi adequada": {
                 "N": "32",
                 "Mediana": "7",
-                "N\u00e3o sabe": "170",
+                "Não sabe": "170",
                 "scores": [
                     "",
                     "",
@@ -257,7 +257,7 @@
             "2.4 Os materiais de apoio foram adequados": {
                 "N": "7",
                 "Mediana": "8",
-                "N\u00e3o sabe": "170",
+                "Não sabe": "170",
                 "scores": [
                     "",
                     "",
@@ -273,16 +273,16 @@
         }
     },
     "Evaluation Method": {
-        "3. M\u00e9todo de avalia\u00e7\u00e3o da UC": {
-            "N\u00ba de inscritos": "221",
-            "N\u00ba de aprovados": "156",
-            "Taxa de aprova\u00e7\u00e3o": "71%",
-            "Tx. de aprova\u00e7\u00e3o m\u00e9dia no ano curricular do curso\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t[?]\n\t\t\t\t\t\t\t\tCalculada com base nos resultados do par curso/ano curricular nos 3 anos imediatamente anteriores ao funcionamento da UC execu\u00e7\u00e3o em an\u00e1lise.": "67%",
-            "M\u00e9dia classifica\u00e7\u00f5es": "13.4",
-            "3.1 O m\u00e9todo de avalia\u00e7\u00e3o foi adequado aos conte\u00fados da UC": {
+        "3. Método de avaliação da UC": {
+            "Nº de inscritos": "221",
+            "Nº de aprovados": "156",
+            "Taxa de aprovação": "71%",
+            "Tx. de aprovação média no ano curricular do curso\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t[?]\n\t\t\t\t\t\t\t\tCalculada com base nos resultados do par curso/ano curricular nos 3 anos imediatamente anteriores ao funcionamento da UC execução em análise.": "67%",
+            "Média classificações": "13.4",
+            "3.1 O método de avaliação foi adequado aos conteúdos da UC": {
                 "N": "2",
                 "Mediana": "8",
-                "N\u00e3o sabe": "170",
+                "Não sabe": "170",
                 "scores": [
                     "",
                     "",
@@ -295,10 +295,10 @@
                     "46%"
                 ]
             },
-            "3.2 O processo de avalia\u00e7\u00e3o foi justo/equitativo": {
+            "3.2 O processo de avaliação foi justo/equitativo": {
                 "N": "2",
                 "Mediana": "9",
-                "N\u00e3o sabe": "170",
+                "Não sabe": "170",
                 "scores": [
                     "",
                     "",
@@ -314,12 +314,12 @@
         }
     },
     "Development": {
-        "4. A UC contribuiu para a aquisi\u00e7\u00e3o e/ou desenvolvimento das compet\u00eancias": {
-            "4.1 Desenvolver o conhecimento e compreens\u00e3o do tema": {
+        "4. A UC contribuiu para a aquisição e/ou desenvolvimento das competências": {
+            "4.1 Desenvolver o conhecimento e compreensão do tema": {
                 "N": "1",
                 "Mediana": "4",
-                "N\u00e3o sabe": "8",
-                "N\u00e3o se aplica": "170",
+                "Não sabe": "8",
+                "Não se aplica": "170",
                 "scores": [
                     "",
                     "",
@@ -335,8 +335,8 @@
             "4.2 Aumentar a capacidade de aplicar o conhecimento adquirido sobre o tema": {
                 "N": "1",
                 "Mediana": "6",
-                "N\u00e3o sabe": "7",
-                "N\u00e3o se aplica": "170",
+                "Não sabe": "7",
+                "Não se aplica": "170",
                 "scores": [
                     "",
                     "",
@@ -349,11 +349,11 @@
                     "22%"
                 ]
             },
-            "4.3 Desenvolver o sentido cr\u00edtico e a capacidade de reflex\u00e3o sobre o tema": {
+            "4.3 Desenvolver o sentido crítico e a capacidade de reflexão sobre o tema": {
                 "N": "13",
                 "Mediana": "5",
-                "N\u00e3o sabe": "7",
-                "N\u00e3o se aplica": "170",
+                "Não sabe": "7",
+                "Não se aplica": "170",
                 "scores": [
                     "",
                     "",
@@ -366,11 +366,11 @@
                     "14%"
                 ]
             },
-            "4.4 Promover a capacidade de coopera\u00e7\u00e3o e comunica\u00e7\u00e3o": {
+            "4.4 Promover a capacidade de cooperação e comunicação": {
                 "N": "45",
                 "Mediana": "11",
-                "N\u00e3o sabe": "6",
-                "N\u00e3o se aplica": "170",
+                "Não sabe": "6",
+                "Não se aplica": "170",
                 "scores": [
                     "8%",
                     "8%",
@@ -383,11 +383,11 @@
                     "11%"
                 ]
             },
-            "4.5 Aumentar a capacidade de aprendizagem aut\u00f3noma": {
+            "4.5 Aumentar a capacidade de aprendizagem autónoma": {
                 "N": "4",
                 "Mediana": "4",
-                "N\u00e3o sabe": "7",
-                "N\u00e3o se aplica": "170",
+                "Não sabe": "7",
+                "Não se aplica": "170",
                 "scores": [
                     "",
                     "",
@@ -400,11 +400,11 @@
                     "20%"
                 ]
             },
-            "4.6 Aprofundar a capacidade de an\u00e1lise sobre as implica\u00e7\u00f5es do tema no contexto social e profissional": {
+            "4.6 Aprofundar a capacidade de análise sobre as implicações do tema no contexto social e profissional": {
                 "N": "31",
                 "Mediana": "16",
-                "N\u00e3o sabe": "6",
-                "N\u00e3o se aplica": "170",
+                "Não sabe": "6",
+                "Não se aplica": "170",
                 "scores": [
                     "7%",
                     "7%",

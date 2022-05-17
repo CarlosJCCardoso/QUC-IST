@@ -1,0 +1,358 @@
+{
+    "degree": [
+        {
+            "id": "1128661570813976",
+            "name": "Indústria 4.0 Sustentável",
+            "courses": [
+                {
+                    "id": "283085589463418",
+                    "name": "Sistemas de Produção na Indústria 4.0 Sustentável",
+                    "acronym": "SPI-4S",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "3.0"
+                },
+                {
+                    "id": "283085589463176",
+                    "name": "Introdução ao Projecto e Produção Sustentáveis",
+                    "acronym": "IPPS",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "3.0"
+                },
+                {
+                    "id": "283085589462876",
+                    "name": "Gestão Logística e de Operações",
+                    "acronym": "GLO",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "1127510519585568",
+                    "name": "Desenvolvimento Sustentável - Fundamentos Quantitativos",
+                    "acronym": "DSFQ",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "846035542880272",
+                    "name": "Processamento de Big Data",
+                    "acronym": "PBDat",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                }
+            ]
+        },
+        {
+            "id": "1128661570813973",
+            "name": "Física Médica",
+            "courses": [
+                {
+                    "id": "283085589463077",
+                    "name": "Técnicas de Imagiologia Médica",
+                    "acronym": "TIMed",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "846035542880299",
+                    "name": "Tecnologias Nucleares e da Física de Partículas",
+                    "acronym": "TNFPar",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "846035542880596",
+                    "name": "Técnicas de Terapia com Radiação",
+                    "acronym": "TTR",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                }
+            ]
+        },
+        {
+            "id": "1128661570813965",
+            "name": "Ciências Nucleares Aplicadas",
+            "courses": [
+                {
+                    "id": "846035542880749",
+                    "name": "Efeitos da Radiação",
+                    "acronym": "ERadia",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "846035542880562",
+                    "name": "Radioactividade Ambiente",
+                    "acronym": "RAmbie",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "846035542880442",
+                    "name": "Técnicas Nucleares",
+                    "acronym": "TNuc",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                }
+            ]
+        },
+        {
+            "id": "1128661570813961",
+            "name": "Big Picture Thinking para a Sustentabilidade",
+            "courses": [
+                {
+                    "id": "846035542880578",
+                    "name": "Grande História e Sustentabilidade",
+                    "acronym": "GHS",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "1127510519585568",
+                    "name": "Desenvolvimento Sustentável - Fundamentos Quantitativos",
+                    "acronym": "DSFQ",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "283085589463268",
+                    "name": "Ciência de Redes Complexas",
+                    "acronym": "ARC",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                }
+            ]
+        },
+        {
+            "id": "1128661570813990",
+            "name": "Tecnologias Multimédia",
+            "courses": [
+                {
+                    "id": "846035542880530",
+                    "name": "Produção de Conteúdos Multimédia",
+                    "acronym": "PCM",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "283085589463191",
+                    "name": "Processamento de Imagem e Visão",
+                    "acronym": "PIV",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "283085589463354",
+                    "name": "Comunicação Multimédia",
+                    "acronym": "CMul",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "846035542880251",
+                    "name": "Processamento da Fala",
+                    "acronym": "PF",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "283085589462854",
+                    "name": "Realidade Virtual",
+                    "acronym": "RVir",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                }
+            ]
+        },
+        {
+            "id": "1128661570813989",
+            "name": "Tecnologias Fotónicas",
+            "courses": [
+                {
+                    "id": "283085589462996",
+                    "name": "Óptica e Lasers",
+                    "acronym": "OQL",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "846035542880549",
+                    "name": "Óptica Aplicada",
+                    "acronym": "OAplica",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "3.0"
+                },
+                {
+                    "id": "846035542880437",
+                    "name": "Fundamentos de Biossinais e Imagiologia Biomédica",
+                    "acronym": "FBIB",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "3.0"
+                },
+                {
+                    "id": "846035542880662",
+                    "name": "Sistemas de Comunicações Óticas",
+                    "acronym": "SCO",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "846035542880468",
+                    "name": "Optoeletrónica",
+                    "acronym": "Opto",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "846035542880725",
+                    "name": "Imagiologia Médica",
+                    "acronym": "IMedi",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                }
+            ]
+        },
+        {
+            "id": "1128661570813988",
+            "name": "Tecnologias da Internet",
+            "courses": [
+                {
+                    "id": "846035542880298",
+                    "name": "Comunicação Multimédia",
+                    "acronym": "CMul",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "846035542880445",
+                    "name": "Redes Móveis e Internet das Coisas",
+                    "acronym": "RMIC",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "283085589463020",
+                    "name": "Segurança Informática em Redes e Sistemas",
+                    "acronym": "SIRS",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "283085589463354",
+                    "name": "Comunicação Multimédia",
+                    "acronym": "CMul",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "846035542880738",
+                    "name": "Redes de Computadores e Internet",
+                    "acronym": "RCI",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                }
+            ]
+        },
+        {
+            "id": "1128661570813987",
+            "name": "Tecnologias Biológicas",
+            "courses": [
+                {
+                    "id": "846035542880753",
+                    "name": "Biotecnologia",
+                    "acronym": "Biot",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "846035542880673",
+                    "name": "Genómica Funcional e Bioinformática",
+                    "acronym": "GFB",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "283085589463395",
+                    "name": "Introdução às Ciências Biológicas",
+                    "acronym": "ICB",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "846035542880675",
+                    "name": "Fábricas Celulares Microbianas",
+                    "acronym": "FCM",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                }
+            ]
+        },
+        {
+            "id": "1128661570813986",
+            "name": "Spatial Data Science",
+            "courses": [
+                {
+                    "id": "283085589462859",
+                    "name": "Aprendizagem Automática",
+                    "acronym": "AAut",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "283085589463436",
+                    "name": "Ciência de Dados Geo-Espaciais",
+                    "acronym": "CDG-E",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "283085589463221",
+                    "name": "Detecção Remota",
+                    "acronym": "DR",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                }
+            ]
+        },
+        {
+            "id": "1128661570813984",
+            "name": "Sistemas e Métodos de Apoio à Decisão",
+            "courses": [
+                {
+                    "id": "1408985496305925",
+                    "name": "Modelos de Apoio à Decisão",
+                    "acronym": "MADec-2",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "283085589463289",
+                    "name": "Modelos de Simulação de Sistemas",
+                    "acronym": "MSSiste",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "283085589463007",
+                    "name": "Ciência de Dados",
+                    "acronym": "CDadosi2",
+                    "academicTerm": "1º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "846035542880706",
+                    "name": "Modelação e Optimização de Sistemas",
+                    "acronym": "MOSis",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                },
+                {
+                    "id": "846035542880331",
+                    "name": "Modelos de Apoio à Decisão",
+                    "acronym": "MADec",
+                    "academicTerm": "2º Semestre 2021/2022",
+                    "credits": "6.0"
+                }
+            ]
+        }
+    ]
+}
